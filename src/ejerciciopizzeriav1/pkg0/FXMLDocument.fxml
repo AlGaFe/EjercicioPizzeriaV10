@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="792.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejerciciopizzeriav1.pkg0.FXMLDocumentController">
     <children>
-      <Pane layoutX="36.0" layoutY="213.0" prefHeight="200.0" prefWidth="297.0">
+      <Pane layoutX="18.0" layoutY="205.0" prefHeight="188.0" prefWidth="297.0">
          <children>
               <Label fx:id="label" layoutX="52.0" layoutY="6.0" minHeight="16" minWidth="30.0" prefHeight="16.0" prefWidth="208.0" text="Seleccione una de nuestras masas">
                <font>
@@ -22,48 +22,48 @@
             <RadioButton fx:id="finizzima" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#TipoDeMasa" text="Finízzima" />
             <RadioButton fx:id="dominosroll" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#TipoDeMasa" text="Domino's Roll" />
             <RadioButton fx:id="cabraroll" layoutX="14.0" layoutY="154.0" mnemonicParsing="false" onAction="#TipoDeMasa" text="Cabra &amp; Roll" />
-            <TextArea fx:id="DescripcionMasa1" layoutX="142.0" layoutY="31.0" prefHeight="151.0" prefWidth="143.0" />
+            <TextArea fx:id="DescripcionMasa1" layoutX="140.0" layoutY="61.0" prefHeight="66.0" prefWidth="143.0" />
          </children>
       </Pane>
-      <Pane layoutX="84.0" layoutY="149.0" prefHeight="50.0" prefWidth="200.0">
+      <Pane layoutX="66.0" layoutY="135.0" prefHeight="55.0" prefWidth="200.0">
          <children>
             <Button layoutX="-2.0" layoutY="14.0" mnemonicParsing="false" onAction="#seleccionPizza" text="Seleccione una de nuestras pizzas">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
+            <Label fx:id="labelPizza" layoutX="29.0" layoutY="41.0" prefHeight="14.0" prefWidth="143.0" text="Selecciona tu pizza deseada" />
          </children>
       </Pane>
-      <Separator layoutX="1.0" layoutY="134.0" prefHeight="15.0" prefWidth="715.0" />
+      <Separator layoutX="7.0" layoutY="127.0" prefHeight="15.0" prefWidth="715.0" />
       <Separator layoutX="352.0" layoutY="142.0" orientation="VERTICAL" prefHeight="648.0" prefWidth="12.0" />
-      <Separator layoutX="1.0" layoutY="198.0" prefHeight="15.0" prefWidth="343.0" />
-      <ImageView fx:id="DominosPizza" fitHeight="120.0" fitWidth="124.0" layoutX="124.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Separator layoutY="191.0" prefHeight="15.0" prefWidth="343.0" />
+      <ImageView fx:id="DominosPizza" fitHeight="120.0" fitWidth="124.0" layoutX="65.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../2020a7aab3832ed9bcd056792c39dbdf_domino-dominos-pizza-clipart_210-210.png" />
          </image>
       </ImageView>
-      <Label layoutX="284.0" layoutY="74.0" prefHeight="14.0" prefWidth="297.0" text="Menú de selección de pizzas">
+      <Label layoutX="238.0" layoutY="67.0" prefHeight="14.0" prefWidth="297.0" text="Menú de selección de pizzas">
          <font>
             <Font name="Broadway" size="19.0" />
          </font>
       </Label>
-      <Separator layoutX="1.0" layoutY="442.0" prefHeight="7.0" prefWidth="343.0" />
-      <Pane layoutX="32.0" layoutY="456.0" prefHeight="69.0" prefWidth="288.0">
+      <Pane layoutX="22.0" layoutY="402.0" prefHeight="86.0" prefWidth="288.0">
          <children>
             <Label fx:id="label1" layoutX="69.0" layoutY="6.0" minHeight="16" minWidth="30.0" prefHeight="16.0" prefWidth="200.0" text="Seleccione el tamaño deseado">
                <font>
                   <Font name="System Bold Italic" size="11.0" />
                </font>
             </Label>
-            <ComboBox fx:id="desplegableTamaño" layoutX="69.0" layoutY="35.0" prefWidth="150.0" />
+            <ComboBox fx:id="desplegableTamaño" layoutX="69.0" layoutY="32.0" onAction="#seleccionTamaño" prefWidth="150.0" />
+            <Label layoutX="97.0" layoutY="66.0" text="Para" />
+            <Label fx:id="labelPersonas" layoutX="128.0" layoutY="66.0" prefHeight="14.0" prefWidth="22.0" />
+            <Label layoutX="150.0" layoutY="66.0" prefHeight="14.0" prefWidth="50.0" text="personas" />
          </children>
       </Pane>
-      <Separator layoutX="1.0" layoutY="550.0" prefHeight="7.0" prefWidth="351.0" />
-      <Label layoutX="125.0" layoutY="526.0" text="Para" />
-      <Label fx:id="labelPersonas" layoutX="156.0" layoutY="526.0" prefHeight="14.0" prefWidth="22.0" />
-      <Label layoutX="178.0" layoutY="526.0" prefHeight="14.0" prefWidth="50.0" text="personas" />
-      <Separator layoutX="352.0" layoutY="585.0" prefHeight="14.0" prefWidth="364.0" />
-      <Pane layoutX="401.0" layoutY="599.0" prefHeight="94.0" prefWidth="297.0">
+      <Separator layoutY="488.0" prefHeight="7.0" prefWidth="351.0" />
+      <Separator layoutX="343.0" layoutY="536.0" prefHeight="14.0" prefWidth="364.0" />
+      <Pane layoutX="365.0" layoutY="550.0" prefHeight="94.0" prefWidth="297.0">
          <children>
             <Label fx:id="label11" layoutX="55.0" layoutY="6.0" minHeight="16" minWidth="30.0" prefHeight="16.0" prefWidth="200.0" text="Introduce un nombre para el pedido">
                <font>
@@ -74,12 +74,12 @@
             <Button layoutX="116.0" layoutY="66.0" mnemonicParsing="false" text="Realizar Pedido" />
          </children>
       </Pane>
-      <Label layoutX="403.0" layoutY="191.0" prefHeight="14.0" prefWidth="64.0" text="Tu pedido">
+      <Label layoutX="394.0" layoutY="142.0" prefHeight="14.0" prefWidth="64.0" text="Tu pedido">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <Pane layoutX="386.0" layoutY="211.0" prefHeight="381.0" prefWidth="272.0">
+      <Pane layoutX="377.0" layoutY="162.0" prefHeight="381.0" prefWidth="272.0">
          <children>
             <Label fx:id="labelMasa" layoutX="11.0" layoutY="10.0" prefHeight="14.0" prefWidth="38.0" text="Masa">
                <font>
@@ -151,12 +151,12 @@
             <Button fx:id="calcularPedido" layoutX="104.0" layoutY="342.0" mnemonicParsing="false" onAction="#botonCalcularPedido" text="Calcular Pedido" />
          </children>
       </Pane>
-      <Label layoutX="597.0" layoutY="191.0" prefHeight="14.0" prefWidth="44.0" text="Precio">
+      <Label layoutX="588.0" layoutY="142.0" prefHeight="14.0" prefWidth="44.0" text="Precio">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <Pane layoutX="10.0" layoutY="557.0" prefHeight="248.0" prefWidth="304.0">
+      <Pane layoutX="14.0" layoutY="495.0" prefHeight="248.0" prefWidth="304.0">
          <children>
             <Label fx:id="label2" layoutX="58.0" layoutY="14.0" minHeight="16" minWidth="30.0" prefHeight="16.0" prefWidth="200.0" text="¿Quiere algún ingrediente extra?">
                <font>
@@ -181,5 +181,6 @@
             <CheckBox layoutX="169.0" layoutY="218.0" mnemonicParsing="false" text="Cebolla Caramelizada" />
          </children>
       </Pane>
+      <Separator layoutY="393.0" prefHeight="7.0" prefWidth="343.0" />
     </children>
 </AnchorPane>
