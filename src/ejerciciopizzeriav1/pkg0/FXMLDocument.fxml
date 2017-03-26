@@ -36,8 +36,8 @@
          </children>
       </Pane>
       <Separator layoutX="7.0" layoutY="127.0" prefHeight="15.0" prefWidth="715.0" />
-      <Separator layoutX="352.0" layoutY="142.0" orientation="VERTICAL" prefHeight="648.0" prefWidth="12.0" />
-      <Separator layoutY="191.0" prefHeight="15.0" prefWidth="343.0" />
+      <Separator layoutX="352.0" layoutY="134.0" orientation="VERTICAL" prefHeight="656.0" prefWidth="12.0" />
+      <Separator layoutY="191.0" prefHeight="15.0" prefWidth="357.0" />
       <ImageView fx:id="DominosPizza" fitHeight="120.0" fitWidth="124.0" layoutX="65.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../2020a7aab3832ed9bcd056792c39dbdf_domino-dominos-pizza-clipart_210-210.png" />
@@ -61,8 +61,8 @@
             <Label layoutX="150.0" layoutY="66.0" prefHeight="14.0" prefWidth="50.0" text="personas" />
          </children>
       </Pane>
-      <Separator layoutY="488.0" prefHeight="7.0" prefWidth="351.0" />
-      <Separator layoutX="343.0" layoutY="536.0" prefHeight="14.0" prefWidth="364.0" />
+      <Separator layoutY="488.0" prefHeight="7.0" prefWidth="357.0" />
+      <Separator layoutX="357.0" layoutY="536.0" prefHeight="14.0" prefWidth="350.0" />
       <Pane layoutX="365.0" layoutY="550.0" prefHeight="94.0" prefWidth="297.0">
          <children>
             <Label fx:id="label11" layoutX="55.0" layoutY="6.0" minHeight="16" minWidth="30.0" prefHeight="16.0" prefWidth="200.0" text="Introduce un nombre para el pedido">
@@ -163,24 +163,24 @@
                   <Font name="System Bold Italic" size="11.0" />
                </font>
             </Label>
-            <CheckBox layoutX="24.0" layoutY="39.0" mnemonicParsing="false" text="Aceitunas Negras" />
-            <CheckBox layoutX="24.0" layoutY="62.0" mnemonicParsing="false" text="Anchoas" />
-            <CheckBox layoutX="24.0" layoutY="87.0" mnemonicParsing="false" text="Atún" />
-            <CheckBox layoutX="24.0" layoutY="114.0" mnemonicParsing="false" text="Bacon" />
-            <CheckBox layoutX="24.0" layoutY="141.0" mnemonicParsing="false" text="Cebolla" />
-            <CheckBox layoutX="169.0" layoutY="39.0" mnemonicParsing="false" text="Maíz" />
-            <CheckBox layoutX="169.0" layoutY="62.0" mnemonicParsing="false" text="Pepperoni" />
-            <CheckBox layoutX="169.0" layoutY="87.0" mnemonicParsing="false" text="Pimiento Verde" />
-            <CheckBox layoutX="169.0" layoutY="114.0" mnemonicParsing="false" text="Tofu" />
-            <CheckBox layoutX="169.0" layoutY="141.0" mnemonicParsing="false" text="Pollo a la Parrilla" />
-            <CheckBox layoutX="24.0" layoutY="168.0" mnemonicParsing="false" text="Champiñón" />
-            <CheckBox layoutX="169.0" layoutY="168.0" mnemonicParsing="false" text="Ternera Especiada" />
-            <CheckBox layoutX="24.0" layoutY="196.0" mnemonicParsing="false" text="Jamón York" />
-            <CheckBox layoutX="169.0" layoutY="196.0" mnemonicParsing="false" text="Tomate Natural" />
-            <CheckBox layoutX="21.0" layoutY="218.0" mnemonicParsing="false" text="Jamón Serrano" />
-            <CheckBox layoutX="169.0" layoutY="218.0" mnemonicParsing="false" text="Cebolla Caramelizada" />
+            <CheckBox fx:id="ingredienteAceitunas" layoutX="24.0" layoutY="39.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Aceitunas Negras" />
+            <CheckBox fx:id="ingredienteAnchoas" layoutX="24.0" layoutY="62.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Anchoas" />
+            <CheckBox fx:id="ingredienteAtun" layoutX="24.0" layoutY="87.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Atún" />
+            <CheckBox fx:id="ingredientebacon" layoutX="24.0" layoutY="114.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Bacon" />
+            <CheckBox fx:id="ingredienteCeballo" layoutX="24.0" layoutY="141.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Cebolla" />
+            <CheckBox fx:id="ingredienteMaiz" layoutX="169.0" layoutY="39.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Maíz" />
+            <CheckBox fx:id="ingredientePepperoni" layoutX="169.0" layoutY="62.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Pepperoni" />
+            <CheckBox fx:id="ingredientePimientoV" layoutX="169.0" layoutY="87.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Pimiento Verde" />
+            <CheckBox fx:id="ingredienteTofu" layoutX="169.0" layoutY="114.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Tofu" />
+            <CheckBox fx:id="ingredientePollo" layoutX="169.0" layoutY="141.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Pollo a la Parrilla" />
+            <CheckBox fx:id="ingredienteChampinon" layoutX="24.0" layoutY="168.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Champiñón" />
+            <CheckBox fx:id="ingredienteTernera" layoutX="169.0" layoutY="168.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Ternera Especiada" />
+            <CheckBox fx:id="ingredienteJamonY" layoutX="24.0" layoutY="196.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Jamón York" />
+            <CheckBox fx:id="ingredienteTomate" layoutX="169.0" layoutY="196.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Tomate Natural" />
+            <CheckBox fx:id="ingredienteJamonS" layoutX="23.0" layoutY="218.0" mnemonicParsing="false" onAction="#ingredientesExtra" prefHeight="17.0" prefWidth="104.0" text="Jamón Serrano" />
+            <CheckBox fx:id="ingredienteCebolla" layoutX="169.0" layoutY="218.0" mnemonicParsing="false" onAction="#ingredientesExtra" text="Cebolla Caramelizada" />
          </children>
       </Pane>
-      <Separator layoutY="393.0" prefHeight="7.0" prefWidth="343.0" />
+      <Separator layoutY="399.0" prefHeight="7.0" prefWidth="357.0" />
     </children>
 </AnchorPane>
