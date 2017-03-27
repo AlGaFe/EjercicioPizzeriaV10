@@ -62,24 +62,12 @@
          </children>
       </Pane>
       <Separator layoutY="488.0" prefHeight="7.0" prefWidth="357.0" />
-      <Separator layoutX="357.0" layoutY="536.0" prefHeight="14.0" prefWidth="350.0" />
-      <Pane layoutX="365.0" layoutY="550.0" prefHeight="94.0" prefWidth="297.0">
-         <children>
-            <Label fx:id="label11" layoutX="55.0" layoutY="6.0" minHeight="16" minWidth="30.0" prefHeight="16.0" prefWidth="200.0" text="Introduce un nombre para el pedido">
-               <font>
-                  <Font name="System Bold Italic" size="11.0" />
-               </font>
-            </Label>
-            <TextField fx:id="nombrePedido" layoutX="21.0" layoutY="35.0" prefHeight="22.0" prefWidth="255.0" promptText=" Por favor introduce un nombre para el pedido" />
-            <Button layoutX="116.0" layoutY="66.0" mnemonicParsing="false" text="Realizar Pedido" />
-         </children>
-      </Pane>
-      <Label layoutX="394.0" layoutY="142.0" prefHeight="14.0" prefWidth="64.0" text="Tu pedido">
+      <Label layoutX="387.0" layoutY="206.0" prefHeight="14.0" prefWidth="64.0" text="Tu pedido">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <Pane layoutX="377.0" layoutY="162.0" prefHeight="381.0" prefWidth="272.0">
+      <Pane layoutX="387.0" layoutY="228.0" prefHeight="381.0" prefWidth="272.0">
          <children>
             <Label fx:id="labelMasa" layoutX="11.0" layoutY="10.0" prefHeight="14.0" prefWidth="38.0" text="Masa">
                <font>
@@ -148,10 +136,11 @@
                   <Font name="System Italic" size="11.0" />
                </font>
             </Label>
-            <Button fx:id="calcularPedido" layoutX="104.0" layoutY="342.0" mnemonicParsing="false" onAction="#botonCalcularPedido" text="Calcular Pedido" />
+            <Button fx:id="calcularPedido" layoutX="12.0" layoutY="345.0" mnemonicParsing="false" onAction="#botonCalcularPedido" text="Calcular Pedido" />
+            <Button fx:id="cancelarPedido" layoutX="161.0" layoutY="345.0" mnemonicParsing="false" onAction="#ResetPedido" text="Cancelar Pedido" />
          </children>
       </Pane>
-      <Label layoutX="588.0" layoutY="142.0" prefHeight="14.0" prefWidth="44.0" text="Precio">
+      <Label layoutX="582.0" layoutY="206.0" prefHeight="14.0" prefWidth="44.0" text="Precio">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
@@ -182,5 +171,7 @@
          </children>
       </Pane>
       <Separator layoutY="399.0" prefHeight="7.0" prefWidth="357.0" />
+      <Separator layoutX="365.0" layoutY="221.0" prefHeight="7.0" prefWidth="357.0" />
+      <Separator layoutX="375.0" layoutY="619.0" prefHeight="7.0" prefWidth="357.0" />
     </children>
 </AnchorPane>

@@ -6,6 +6,7 @@
 package ejerciciopizzeriav1.pkg0;
 
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -40,10 +41,10 @@ public class FXMLDocumentController implements Initializable {
     ToggleGroup masa = new ToggleGroup();
     double precioTotalDouble = 0;
     double multiplicadorTamaño = 1.15;
-    double doublemasa=0;
-    double doublePizza=0;
+    double doublemasa = 0;
+    double doublePizza = 0;
     String tamaño;
-    double doubleIngrediente=0;
+    double doubleIngrediente = 0;
     String stringIngrediente;
     String StipoPizza;
     String sMasa;
@@ -143,6 +144,8 @@ public class FXMLDocumentController implements Initializable {
     private CheckBox ingredienteJamonS;
     @FXML
     private CheckBox ingredienteCebolla;
+    @FXML
+    private Button cancelarPedido;
 
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -171,27 +174,27 @@ public class FXMLDocumentController implements Initializable {
         this.cabraroll.setToggleGroup(masa);
         this.cabraroll.setUserData("Cabra & Roll");
         if (this.masa.getSelectedToggle().getUserData().equals("Original")) {
-            sMasa="Original";
+            sMasa = "Original";
             this.DescripcionMasa1.setText("Para aquellos amantes \n del auténtico sabor \n de la pizza Domino's");
             doublemasa = 1;
         }
         if (this.masa.getSelectedToggle().getUserData().equals("Pan")) {
-            sMasa="Pan";
+            sMasa = "Pan";
             this.DescripcionMasa1.setText("Al más puro \n estilo Chicago");
             doublemasa = 1;
         }
         if (this.masa.getSelectedToggle().getUserData().equals("Finízzima")) {
-            sMasa="Finízzima";
+            sMasa = "Finízzima";
             this.DescripcionMasa1.setText("La masa más \n fina y crujiente \n de Domino's");
             doublemasa = 1;
         }
         if (this.masa.getSelectedToggle().getUserData().equals("Domino's Roll")) {
-            sMasa="Domino's Roll";
+            sMasa = "Domino's Roll";
             this.DescripcionMasa1.setText("Con delicioso borde \n relleno de queso");
             doublemasa = 2;
         }
         if (this.masa.getSelectedToggle().getUserData().equals("Cabra & Roll")) {
-            sMasa="Cabra & Roll";
+            sMasa = "Cabra & Roll";
             this.DescripcionMasa1.setText("Borde relleno de \n queso de cabra fundido");
             doublemasa = 2;
         }
@@ -226,87 +229,87 @@ public class FXMLDocumentController implements Initializable {
 
         Optional<String> result = dialog.showAndWait();
         if (result.get().equals("Margarita")) {
-            StipoPizza="Margarita";
+            StipoPizza = "Margarita";
             doublePizza = 6;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Cheesix")) {
-            StipoPizza="Cheesix";
+            StipoPizza = "Cheesix";
             doublePizza = 8;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Pulled Beef")) {
-            StipoPizza="Pulled Beef";
+            StipoPizza = "Pulled Beef";
             doublePizza = 8;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Pulled Pork")) {
-             StipoPizza="Pulled Pork";
+            StipoPizza = "Pulled Pork";
             doublePizza = 8;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Barbacoa")) {
-             StipoPizza="Barbacoa";
+            StipoPizza = "Barbacoa";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Pecado Carnal")) {
-            StipoPizza="Pecado Carnal";
+            StipoPizza = "Pecado Carnal";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Cremozza BBQ")) {
-            StipoPizza="Cremozza BBQ";
+            StipoPizza = "Cremozza BBQ";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Cremozza Estilo Bourbon")) {
-            StipoPizza="Cremozza Estilo Bourbon";
+            StipoPizza = "Cremozza Estilo Bourbon";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Carbonara")) {
-            StipoPizza="Carbonara";
+            StipoPizza = "Carbonara";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Cabramelizada")) {
-            StipoPizza="Cabramelizada";
+            StipoPizza = "Cabramelizada";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Pollo a la Parrilla")) {
-             StipoPizza="Pollo a la Parrilla";
+            StipoPizza = "Pollo a la Parrilla";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Cuatro Quesos")) {
-            StipoPizza="Cuatro Quesos";
+            StipoPizza = "Cuatro Quesos";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Hawaiana Plus")) {
-            StipoPizza="Hawaiana Plus";
+            StipoPizza = "Hawaiana Plus";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Extravaganzza")) {
-            StipoPizza="Extravaganzza";
+            StipoPizza = "Extravaganzza";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Pata Negra")) {
-            StipoPizza="Pata Negra";
+            StipoPizza = "Pata Negra";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Campiña")) {
-            StipoPizza="Campiña";
+            StipoPizza = "Campiña";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
         if (result.get().equals("Tony Pepperoni")) {
-            StipoPizza="Tony Pepperoni";
+            StipoPizza = "Tony Pepperoni";
             doublePizza = 7;
             this.labelPizza.setText("Tu elección: " + result.get());
         }
@@ -314,38 +317,37 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void botonCalcularPedido(ActionEvent event) {
+        DecimalFormat formato = new DecimalFormat("0.00");
         this.MasaElegida.setText(this.sMasa);
         this.pizzaElegida.setText(this.StipoPizza);
         this.tamañoElegido.setText(this.tamaño);
         for (String i : ingredientes) {
-            this.seleccionIngredientes.setText(i);
+            this.seleccionIngredientes.appendText(i + "\n");
         }
-        this.precioMasa.setText(doublemasa+"€");
-        this.precioPizza.setText(this.doublePizza + "€");
-        this.precioIngredientes.setText(this.doubleIngrediente + "€");
+        this.precioMasa.setText(formato.format(this.doublemasa) + "€");
+        this.precioPizza.setText(formato.format(this.doublePizza) + "€");
+        this.precioIngredientes.setText(formato.format(this.doubleIngrediente) + "€");
         this.precioTamaño.setText("" + this.multiplicadorTamaño);
-        precioTotalDouble=(doublemasa+doublePizza+doubleIngrediente)* multiplicadorTamaño;
-        this.precioTotal.setText(this.precioTotalDouble + "€");
-        
-        
-        
+        precioTotalDouble = (doublemasa + doublePizza + doubleIngrediente) * multiplicadorTamaño;
+        this.precioTotal.setText(formato.format(this.precioTotalDouble) + "€");
+
     }
 
     @FXML
     private void seleccionTamaño(ActionEvent event) {
         String seleccion = desplegableTamaño.getValue();
         if (seleccion.equals("Pequeña")) {
-            String tamaño = "Pequeña";
+            tamaño = "Pequeña";
             labelPersonas.setText("1");
             multiplicadorTamaño = 1.00;
         }
         if (seleccion.equals("Mediana")) {
-            String tamaño = "Mediana";
+            tamaño = "Mediana";
             labelPersonas.setText("2");
             multiplicadorTamaño = 1.15;
         }
         if (seleccion.equals("Familiar")) {
-            String tamaño = "Familiar";
+            tamaño = "Familiar";
             labelPersonas.setText("4");
             multiplicadorTamaño = 1.30;
         }
@@ -384,7 +386,7 @@ public class FXMLDocumentController implements Initializable {
             stringIngrediente = "Champiñón";
             ingredientes.add(stringIngrediente);
         }
-         if (event.getSource() == this.ingredienteJamonS) {
+        if (event.getSource() == this.ingredienteJamonS) {
             doubleIngrediente = doubleIngrediente + 1.85;
             stringIngrediente = "Jamón Serrano";
             ingredientes.add(stringIngrediente);
@@ -429,6 +431,59 @@ public class FXMLDocumentController implements Initializable {
             stringIngrediente = "Pollo a la Parrilla";
             ingredientes.add(stringIngrediente);
         }
+
+    }
+
+    @FXML
+    private void ResetPedido(ActionEvent event) {
+        precioTotalDouble = 0;
+        multiplicadorTamaño = 1.15;
+        doublemasa = 0;
+        doublePizza = 0;
+        tamaño = "";
+        doubleIngrediente = 0;
+        StipoPizza = "";
+        sMasa = "";
+
+        ingredientes.removeAll(tiposTamano);
+
+        this.labelPizza.setText("Selecciona tu pizza deseada");
+
+        this.dominosroll.setCache(false);
+        this.cabraroll.setCache(false);
+        this.finizzima.setCache(false);
+        this.original.setCache(false);
+        this.pan.setCache(false);
+
+        this.ingredienteAceitunas.setSelected(false);
+        this.ingredienteAnchoas.setSelected(false);
+        this.ingredienteAtun.setSelected(false);
+        this.ingredienteCeballo.setSelected(false);
+        this.ingredienteCebolla.setSelected(false);
+        this.ingredienteChampinon.setSelected(false);
+        this.ingredienteJamonS.setSelected(false);
+        this.ingredienteJamonY.setSelected(false);
+        this.ingredienteMaiz.setSelected(false);
+        this.ingredientePepperoni.setSelected(false);
+        this.ingredientePimientoV.setSelected(false);
+        this.ingredientePollo.setSelected(false);
+        this.ingredienteTernera.setSelected(false);
+        this.ingredienteTofu.setSelected(false);
+        this.ingredienteTomate.setSelected(false);
+        this.ingredientebacon.setSelected(false);
+
+        this.MasaElegida.setText("Tu masa");
+        this.pizzaElegida.setText("Tu pizza");
+        this.tamañoElegido.setText("Tu tamaño");
+        this.seleccionIngredientes.setText("");
+        this.precioMasa.setText("");
+        this.precioPizza.setText("");
+        this.precioIngredientes.setText("");
+        this.precioTamaño.setText("");
+        this.precioTotal.setText("");
+
+        desplegableTamaño.setValue("Mediana");
+        this.labelPersonas.setText("");
 
     }
 }
